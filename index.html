@@ -52,7 +52,7 @@
     top: 0; left: 0; right: 0;
     z-index: 100;
     background: var(--charcoal);
-    height: 72px;
+    height: 88px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,9 +68,11 @@
     flex-shrink: 0;
   }
   .nav-logo img {
-    height: 34px;
+    height: 72px;
     width: auto;
     display: block;
+    mix-blend-mode: lighten;
+    filter: brightness(1.1) contrast(1.05);
   }
 
   .nav-links {
@@ -132,7 +134,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding-top: 72px;
+    padding-top: 88px;
     overflow: hidden;
   }
 
@@ -229,7 +231,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, var(--charcoal) 0%, transparent 30%);
+    background: linear-gradient(to right, var(--charcoal) 0%, rgba(48,48,48,0.7) 25%, transparent 55%);
     z-index: 1;
   }
   .hero-img {
@@ -551,7 +553,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, transparent 60%, var(--off-white) 100%);
+    background: linear-gradient(to right, transparent 70%, var(--off-white) 100%);
   }
 
   .about-text {
@@ -750,7 +752,7 @@
   }
 
   @media (max-width: 900px) {
-    nav { padding: 0 20px; gap: 8px; }
+    nav { padding: 0 20px; gap: 8px; height: 72px; }
     .nav-links { display: none; }
     .nav-phone { display: none; }
     .nav-menu-btn {
@@ -1075,7 +1077,7 @@
 <nav>
   <a href="/" class="nav-logo">
     <!-- Replace src below with your Wix Media Manager URL for the primary logo PNG (white/silver version) -->
-    <img src="https://static.wixstatic.com/media/640c4a_ab6e0e6821c04917a07b00f06f362834~mv2.jpg/v1/crop/x_271,y_229,w_1454,h_453/fill/w_289,h_90,al_c,q_80,enc_avif,quality_auto/Gardner%20Medicare%20%26%20Retirement%20Advisors%20L.jpg" alt="Gardner Medicare &amp; Retirement Solutions" />
+    <img src="https://jazzy-brigadeiros-5ea0be.netlify.app/logo.png" alt="Gardner Medicare &amp; Retirement Solutions" />
   </a>
   <ul class="nav-links">
     <li><a href="/medicare">Medicare</a></li>
@@ -1085,7 +1087,7 @@
     <li><a href="/blog">Blog</a></li>
     <li><a href="/contact">Contact</a></li>
   </ul>
-  <button class="nav-menu-btn" aria-label="Menu" onclick="document.querySelector('.nav-links').style.cssText='display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:var(--charcoal);padding:20px 24px;gap:16px;border-bottom:1px solid rgba(255,255,255,0.1)'">
+  <button class="nav-menu-btn" aria-label="Menu" onclick="document.querySelector('.nav-links').style.cssText='display:flex;flex-direction:column;position:absolute;top:88px;left:0;right:0;background:var(--charcoal);padding:20px 24px;gap:16px;border-bottom:1px solid rgba(255,255,255,0.1)'">
     <span></span><span></span><span></span>
   </button>
   <div class="nav-right">
@@ -1124,7 +1126,7 @@
     <!-- Replace src with your uploaded Wix media URL for IMG_0172 -->
     <img
       class="hero-img"
-      src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=900&q=80&fit=crop"
+      src="https://jazzy-brigadeiros-5ea0be.netlify.app/hero-photo.jpg"
       alt="Medicare advisor"
     />
   </div>
@@ -1356,13 +1358,13 @@
     <div class="about-photo">
       <!-- Replace src with your uploaded Wix media URL for IMG_0156 -->
       <img
-        src="https://images.unsplash.com/photo-1556157382-97eda2f9e2bf?w=800&q=80&fit=crop"
+        src="https://jazzy-brigadeiros-5ea0be.netlify.app/about-photo.jpg"
         alt="Gardner Medicare team"
       />
     </div>
     <div class="about-text">
       <p class="eyebrow reveal">Who We Are</p>
-      <h2 class="display reveal">Two people.<br>Fell in love.<br>Sold Medicare.</h2>
+      <h2 class="display reveal">Two people.<br>Fell in love.<br>Started selling insurance<br>to old folks.</h2>
       <!-- BIO PLACEHOLDER: Replace the two paragraphs below with your personal bio -->
       <p class="reveal"><!-- Your bio goes here — drop it in and we'll style it perfectly. --></p>
       <p class="reveal"><!-- Second bio paragraph if needed. --></p>
@@ -1450,7 +1452,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a href="/" style="display:inline-block; margin-bottom: 16px;">
-          <img src="https://static.wixstatic.com/media/640c4a_ab6e0e6821c04917a07b00f06f362834~mv2.jpg/v1/crop/x_271,y_229,w_1454,h_453/fill/w_220,h_68,al_c,q_80,enc_avif,quality_auto/Gardner%20Medicare%20%26%20Retirement%20Advisors%20L.jpg" alt="Gardner Medicare &amp; Retirement Solutions" style="height:40px; width:auto; opacity:0.85;" />
+          <img src="https://jazzy-brigadeiros-5ea0be.netlify.app/logo.png" alt="Gardner Medicare &amp; Retirement Solutions" style="height:40px; width:auto; opacity:0.85;" />
         </a>
         <p>Independent Medicare and retirement planning in New Braunfels, TX. Helping Texans turning 65 make confident, informed decisions — completely free.</p>
       </div>
